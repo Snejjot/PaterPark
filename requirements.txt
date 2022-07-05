@@ -1,0 +1,5 @@
+Flask==2.1.2
+flask-sqlalchemy==2.5.1
+pandas==1.4.3
+python-Levenshtein-wheels==0.13.2
+pytest==7.1.2
