@@ -40,12 +40,9 @@ def plate():
         if errors:
             return {"status": "error", "message": errors}, 422
 
-        # Check if not exist prior to save
         plate_num = data.get("plate")
-        _plate = Plate.query.get(plate_num)
-        if not _plate:
-            _plate = Plate(plate_num)
-            db.session.add(_plate)
+        _plate = Plate(plate_num)
+        db.session.add(_plate)
         _plate.timestamp = datetime.utcnow()
         db.session.commit()
         return jsonify(data)
