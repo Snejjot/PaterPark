@@ -1,0 +1,77 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+Skip to content
+Product
+Team
+Enterprise
+Explore
+Marketplace
+Pricing
+Search
+Sign in
+Sign up
+pallets
+/
+flask
+Public
+Code
+Issues
+Pull requests
+Discussions
+Actions
+Security
+Insights
+flask/.gitignore
+@davidism
+davidism remove references to mailing list
+Latest commit 2381044 on May 10
+ History
+ 4 contributors
+@mitsuhiko@davidism@greyli@redian
+25 lines (24 sloc)  207 Bytes
+
+.DS_Store
+.env
+.flaskenv
+*.pyc
+*.pyo
+env/
+venv/
+.venv/
+env*
+dist/
+build/
+*.egg
+*.egg-info/
+.tox/
+.cache/
+.pytest_cache/
+.idea/
+docs/_build/
+.vscode
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+*,cover
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
