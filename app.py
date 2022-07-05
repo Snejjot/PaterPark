@@ -61,8 +61,8 @@ def search_plate():
         if not levenshtein:
             levenshtein = 0
         if filter_value:
-            filter = filter_value.replace("-", "")
-            df["lev_distance"] = df.apply(lambda row: distance(row["plate"], filter), axis=1)
+            _filter = filter_value.replace("-", "")
+            df["lev_distance"] = df.apply(lambda row: distance(row["plate"], _filter), axis=1)
             df = df[df["lev_distance"] <= int(levenshtein)]
             df.drop(columns=["lev_distance"], inplace=True)
 
